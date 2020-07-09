@@ -32,6 +32,10 @@ ion-card-header{
     color: black;
 }
 
+.personal-title {
+    color: var(--ion-color-primary);
+}
+
 .personal-subtitle {
     margin-top: 0px;
 }
@@ -43,7 +47,7 @@ ion-card-header{
 .category{
     font-weight: bold;
     font-size: 12px;
-    color: var(--ion-color-dark);
+    color: var(--ion-color-primary);
     
 }
 
@@ -52,12 +56,12 @@ ion-card-header{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: var(--ion-color-dark);
+    background-color:  #222428;
     width: auto;
 }
 
 .social-butts{
-    --background: var(--ion-color-dark);
+    --background:  #222428;
     justify-self: center;
     align-self: center;
     margin-left: 22px;
