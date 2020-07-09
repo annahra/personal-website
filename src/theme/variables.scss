@@ -3,6 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  body[data-theme= "dark"] {
+    --ion-color-primary: #f4f5f8;
+    --ion-background-color: #121212;
+
+  }
+
   /** primary **/
   --ion-color-primary: #222428;
   --ion-color-primary-rgb: 56, 128, 255;
