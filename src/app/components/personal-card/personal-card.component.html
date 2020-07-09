@@ -1,15 +1,87 @@
-<ion-card>
-  <ion-grid fixed="true">
+
+<div class="container">
+<ion-card id="card">
+  <ion-grid fixed="false">
     <ion-row>
-      <ion-col size="12" size-sm="12" size-md="6" size-lg="3">
-        <img class="ion-padding" src="../../../assets/img/m4.jpg">
-      </ion-col>
-      <ion-col size="12" size-sm="12" size-md="6" size-lg="9">
-        <ion-card-header>
-          <ion-card-title>I'm <span style="font-weight: bold;">Annah</span></ion-card-title>
-          <ion-card-subtitle>Doer of nothings</ion-card-subtitle>
+      <ion-col class="ion-text-center" size="12" size-sm="12" size-md="6" size-lg="5" size-xl="5">
+        <div id="greeting2">
+          <img  id="svg" src="../../../assets/svg/speech-bubble.svg">
+          <div id="hi2"><span style="font-weight: bold;">Hi</span></div>
+        </div>
+        <ion-card-header id="header2">
+          <ion-card-title class="personal-title">I'm <span style="font-weight: bold;">Annah Ramones</span></ion-card-title>
+          <ion-card-subtitle class="personal-subtitle">Doer of nothings</ion-card-subtitle>
         </ion-card-header>
+        <img class="ion-padding me" src="../../../assets/img/m4.jpg">
+      </ion-col>
+      <ion-col class="right-side" size="12" size-sm="12" size-md="6" size-lg="7" size-xl="7">
+
+        <div id="greeting">
+          <img  id="svg" src="../../../assets/svg/speech-bubble.svg">
+          <div id="hi"><span style="font-weight: bold;">Hi</span></div>
+        </div>
+
+        <ion-card-header id="header1">
+          <ion-card-title class="personal-title">I'm <span style="font-weight: bold;">Annah Ramones</span></ion-card-title>
+          <ion-card-subtitle class="personal-subtitle">Doer of nothings</ion-card-subtitle>
+        </ion-card-header>
+        
+        <ion-grid id="info">
+          <ion-row>
+            <ion-col size-xs="4" size-sm="6" size-md="4">
+              <div class="category">AGE</div>
+            </ion-col>
+            <ion-col size-xs="8" size-sm="6" size-md="8">
+              <div class="information">26</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size-xs="4" size-sm="6" size-md="4">
+              <div class="category">EMAIL</div>
+            </ion-col>
+            <ion-col size="8" size-sm="6" size-md="8">
+              <div class="information">annahworks@gmail.com</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size-xs="4" size-sm="6" size-md="4">
+              <div class="category">LOCATION</div>
+            </ion-col>
+            <ion-col size="8" size-sm="6" size-md="8">
+              <div class="information">Southern California</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size-xs="4" size-sm="6" size-md="4">
+              <div class="category">EDUCATION</div>
+            </ion-col>
+            <ion-col size="8" size-sm="6" size-md="8">
+              <div class="information">Physics BS, Cal Poly Pomona</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <div id="personal-bottom">
+
+    <ion-button class="social-butts">
+      <ion-icon slot="icon-only"  name="logo-linkedin"></ion-icon>
+    </ion-button>
+
+    <ion-button class="social-butts">
+      <ion-icon slot="icon-only" name="logo-github"></ion-icon>
+    </ion-button>
+
+    <ion-button class="social-butts">
+      <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+    </ion-button>
+
+    <ion-button class="social-butts">
+      <ion-icon slot="icon-only" name="logo-reddit"></ion-icon>
+    </ion-button>
+
+  </div>
 </ion-card>
+</div>
