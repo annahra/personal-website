@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#download-text{
+    padding-left: 15px;
+}
+
+#download-resume{
+    align-self: center;
+    margin: 3rem;
+    width: 250px;
+    height: 50px;
+}
