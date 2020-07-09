@@ -5,7 +5,7 @@
         <div class="navbar" class="ion-text-right">
           <ion-button fill="clear" routerLink="home" routerLinkActive="selected">Home</ion-button>
           <ion-button fill="clear" routerLink="about" routerLinkActive="selected">About</ion-button>
-          <ion-button fill="clear">
+          <ion-button fill="clear" (click)="openToggle()">
             <ion-icon slot="icon-only" name="caret-down"></ion-icon>
           </ion-button>
         </div>

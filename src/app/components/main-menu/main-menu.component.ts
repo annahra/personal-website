@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkModeToggleMenuComponent } from '../dark-mode-toggle-menu/dark-mode-toggle-menu.component';
+import { PopoverController } from '@ionic/angular';
 
 @Component({
   selector: 'app-main-menu',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private popoverCtrl: PopoverController) { }
 
   ngOnInit() {}
+
+  async presentToggle() {
+    const popover = await this.popoverCtrl.create({
+      component: DarkModeToggleMenuComponent,
+    })
+    return await popover.present();
+  }
+
+  public openToggle() {
+    this.presentToggle();
+  }
 
 }
