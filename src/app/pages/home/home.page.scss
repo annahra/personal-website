@@ -17,3 +17,24 @@
     height: 50px;
     background: var(--ion-background-color) !important;
 }
+
+#skills-heading {
+    font-size: xx-large;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: var(--ion-font-family);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@media (min-width: 439px) and (max-width: 635px) {
+    #skills-heading {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 438px) {
+    #skills-heading {
+        font-size: x-large;
+    }
+}
