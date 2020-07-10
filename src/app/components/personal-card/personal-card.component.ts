@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-personal-card',
@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalCardComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {}
-
+  ngOnInit() {
+  }
+  
 }

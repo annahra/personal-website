@@ -24,7 +24,7 @@ ion-card-header{
 #hi {
     position: absolute;
     bottom: 46%;
-    color: black;
+    color: var(--ion-color-primary);
 }
 
 #hi2 {
@@ -285,5 +285,11 @@ ion-card-header{
     
     .personal-subtitle {
         font-size: 18px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #svg {
+        filter: invert(1);
     }
 }

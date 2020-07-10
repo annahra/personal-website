@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { SharedDataService } from 'src/app/services/shared-data.service';
 
 
 @Component({
@@ -8,15 +9,20 @@ import { Component, OnInit} from '@angular/core';
 })
 export class DarkModeToggleMenuComponent implements OnInit {
 
-  constructor() {
-   
+  isDark:boolean;
+
+  constructor(private dataService: SharedDataService) {
+    
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.isDark = this.dataService.getDarkMode();
+  }
 
   onClick(event){
     let systemDark = window.matchMedia("(prefers-color-scheme: dark)");
-    systemDark.addListener(this.colorTest);
+    this.dataService.toggleDarkMode(event.detail.checked);
+    // systemDark.addListener(this.colorTest);
     if(event.detail.checked){
       document.body.setAttribute('data-theme', 'dark');
     }
@@ -25,13 +31,13 @@ export class DarkModeToggleMenuComponent implements OnInit {
     }
   }
 
-   colorTest(systemInitiatedDark) {
-    if (systemInitiatedDark.matches) {
-      document.body.setAttribute('data-theme', 'dark');		
-    } else {
-      document.body.setAttribute('data-theme', 'light');
-    }
-  }
+  // colorTest(systemInitiatedDark) {
+  //   if (systemInitiatedDark.matches) {
+  //     document.body.setAttribute('data-theme', 'dark');
+  //   } else {
+  //     document.body.setAttribute('data-theme', 'light');
+  //   }
+  // }
 
   
 }
