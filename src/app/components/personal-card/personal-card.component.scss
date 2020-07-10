@@ -17,7 +17,7 @@ ion-card-header{
     width: auto;
 }
 
-#svg {
+.svg {
     height: 40px;
 }
 
@@ -288,8 +288,3 @@ ion-card-header{
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    #svg {
-        filter: invert(1);
-    }
-}

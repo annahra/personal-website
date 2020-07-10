@@ -5,7 +5,7 @@
 :root {
 
   body[data-theme= "dark"] {
-    #svg {
+    .svg {
       filter: invert(1);
     }
 
@@ -185,6 +185,9 @@
    * Dark Colors
    * -------------------------------------------
    */
+  .svg {
+    filter: invert(1);
+  }
 
   body {
     --ion-color-primary: #f4f5f8;
