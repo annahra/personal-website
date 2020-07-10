@@ -12,7 +12,6 @@ export class DarkModeToggleMenuComponent implements OnInit {
   isDark:boolean;
 
   constructor(private dataService: SharedDataService) {
-    
   }
 
   ngOnInit() {
