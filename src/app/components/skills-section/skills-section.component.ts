@@ -10,43 +10,53 @@ export class SkillsSectionComponent implements OnInit {
   icons = [
    {
      name: "HTML5",
-     logo: "html-5"
+     logo: "html-5",
+     val: "0.7"
    },
    {
     name: "CSS3",
-    logo: "css3"
+    logo: "css3",
+    val: "0.7"
    },
    {
      name: "Javascript",
-     logo: "javascript-logo"
+     logo: "javascript-logo",
+     val: "0.7"
    },
    {
      name: "Angular",
-     logo: "angularjs"
+     logo: "angularjs",
+     val: "0.7"
    },
    {
      name: "Ionic",
-     logo: "ionic"
+     logo: "ionic",
+     val: "0.8"
    },
    {
     name: "Java",
-    logo: "java"
+    logo: "java",
+    val: "0.9"
    },
    {
      name: "Typescript",
-     logo: "typescript"
+     logo: "typescript",
+     val: "0.75"
    },
    {
      name: "Github",
-     logo: "github"
+     logo: "github",
+     val: "0.9"
    },
    {
      name: "Visual Studio Code",
-     logo: "visual-studio-logo"
+     logo: "visual-studio-logo",
+     val: "0.9"
    },
    {
      name: "Arduino",
-     logo: "arduino"
+     logo: "arduino",
+     val: "0.85"
    }
   ];
 

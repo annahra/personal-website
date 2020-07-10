@@ -1,7 +1,8 @@
 
 <div class="container">
   <div class="skills" *ngFor="let icon of icons">
-  <img class="svg" src="../../../assets/svg/icons/icons8-{{icon.logo}}.svg">
+    <img slot="start" class="svg" src="../../../assets/svg/icons/icons8-{{icon.logo}}.svg">
     <p class="name"> {{ icon.name }} </p>
+    <ion-progress-bar slot="end" class="bar" color="tertiary" value={{icon.val}}></ion-progress-bar>
   </div>
 </div>
