@@ -41,22 +41,22 @@ export class SkillsSectionComponent implements OnInit {
    {
      name: "Typescript",
      logo: "typescript",
-     val: "0.75"
+     val: "0.7"
    },
    {
      name: "Github",
      logo: "github",
-     val: "0.9"
+     val: "0.85"
    },
    {
      name: "Visual Studio Code",
      logo: "visual-studio-logo",
-     val: "0.9"
+     val: "0.8"
    },
    {
      name: "Arduino",
      logo: "arduino",
-     val: "0.85"
+     val: "0.8"
    }
   ];
 
