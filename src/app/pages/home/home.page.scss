@@ -8,6 +8,7 @@
 
 #download-text{
     padding-left: 15px;
+    
 }
 
 #download-resume{
@@ -27,14 +28,21 @@
     margin-right: 40px;
 }
 
-@media (min-width: 439px) and (max-width: 635px) {
+@media (min-width: 751px) and (max-width: 950px) {
     #skills-heading {
         font-size: x-large;
     }
 }
 
+@media (min-width: 439px) and (max-width: 750px) {
+    #skills-heading {
+        font-size: 25px;
+    }
+}
+
 @media (max-width: 438px) {
     #skills-heading {
-        font-size: x-large;
+        font-size: 20px;
+        width: 275px;
     }
 }
