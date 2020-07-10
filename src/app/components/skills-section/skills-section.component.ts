@@ -26,7 +26,7 @@ export class SkillsSectionComponent implements OnInit {
    {
      name: "Angular",
      logo: "angularjs",
-     val: "0.7"
+     val: "0.65"
    },
    {
      name: "Ionic",
@@ -56,7 +56,7 @@ export class SkillsSectionComponent implements OnInit {
    {
      name: "Arduino",
      logo: "arduino",
-     val: "0.8"
+     val: "0.5"
    }
   ];
 

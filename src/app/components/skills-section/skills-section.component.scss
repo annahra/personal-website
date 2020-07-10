@@ -25,11 +25,20 @@
 .svg {
     height: 30px;
     width: 40px;
+    align-self: center;
 }
 
 @media (min-width: 992px) {
     .container {
         grid-template-columns: repeat(5, minmax(200px,1fr));
+    }
+
+    .skills {
+        margin: 30px;
+    }
+
+    .name {
+        
     }
 }
 
