@@ -28,7 +28,7 @@
     align-self: center;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1160px) {
     .container {
         grid-template-columns: repeat(5, minmax(200px,1fr));
     }
@@ -36,48 +36,100 @@
     .skills {
         margin: 30px;
     }
-
-    .name {
-        
-    }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 884px) and (max-width: 1159px) {
     .container {
         grid-template-columns: repeat(4, minmax(75px,1fr));
     }
 
-    .svg {
-        height: 75px;
+    .skills {
+        margin: 30px;
     }
 }
 
-@media (min-width: 635px) and (max-width: 767px) {
+@media (min-width: 730px) and (max-width: 883px) {
     .container {
         grid-template-columns: repeat(3, minmax(200px,1fr));
     }
 
-    .svg {
-        height: 75px;
+    .skills {
+        margin: 30px;
     }
 }
 
-@media (min-width: 439px) and (max-width: 634px) {
+@media (min-width: 608px) and (max-width: 729px) {
     .container {
-        grid-template-columns: repeat(2, minmax(200px,1fr));
+        grid-template-columns: repeat(3, minmax(200px,1fr));
+    }
+
+    .skills {
+        margin: 20px;
     }
 
     .svg {
-        height: 75px;
+        height: 25px;
+        width: 30px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .bar{
+        width: 125px;
     }
 }
 
-@media (max-width: 438px) {
+@media (min-width: 401px) and (max-width: 607px) {
     .container {
         grid-template-columns: repeat(2, minmax(40px,1fr));
+        // justify-items: center;
+        padding-left: 5%;
+    }
+
+    .skills {
+        margin: 20px;
+        
     }
 
     .svg {
-        height: 50px;
+        height: 25px;
+        width: 30px;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .bar{
+        width: 125px;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(40px,1fr));
+        // justify-items: center;
+        padding-left: 3%;
+    }
+
+    .skills {
+        margin: 15px;
+    }
+
+    .svg {
+        height: 25px;
+        width: 30px;
+    }
+
+    .name {
+        font-size: 12.75px;
+    }
+
+    .bar{
+        width: 115px;
+        
     }
 }
