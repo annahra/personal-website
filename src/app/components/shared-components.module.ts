@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PersonalCardComponent } from './personal-card/personal-card.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { PortfolioSlidesComponent } from './portfolio-slides/portfolio-slides.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 
 
@@ -10,7 +11,8 @@ import { PortfolioSlidesComponent } from './portfolio-slides/portfolio-slides.co
   declarations: [
     PersonalCardComponent,
     SkillsSectionComponent,
-    PortfolioSlidesComponent
+    PortfolioSlidesComponent,
+    MainMenuComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { PortfolioSlidesComponent } from './portfolio-slides/portfolio-slides.co
   exports: [
     PersonalCardComponent,
     SkillsSectionComponent,
-    PortfolioSlidesComponent
+    PortfolioSlidesComponent,
+    MainMenuComponent
   ]
 })
 export class SharedComponentsModule { }
