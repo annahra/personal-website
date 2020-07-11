@@ -28,6 +28,10 @@
     align-self: center;
 }
 
+.name {
+    align-self: center;
+}
+
 @media (min-width: 1160px) {
     .container {
         grid-template-columns: repeat(5, minmax(200px,1fr));

@@ -18,6 +18,5 @@ export class SharedDataService {
 
   toggleDarkMode(res) {
     this.darkMode = res;
-    console.log(this.darkMode);
   }
 }
