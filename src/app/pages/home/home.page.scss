@@ -21,7 +21,6 @@
 
 #skills-heading {
     font-size: xx-large;
-    margin-bottom: 30px;
     text-align: center;
     font-family: var(--ion-font-family);
     margin-left: 40px;
@@ -42,7 +41,7 @@
 
 @media (max-width: 438px) {
     #skills-heading {
-        font-size: 20px;
+        font-size: 25px;
         width: 275px;
     }
 }

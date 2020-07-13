@@ -10,6 +10,37 @@
 
     <div id="skills-heading">Skills:</div>
     <app-skills-section></app-skills-section>
-    <app-portfolio-slides></app-portfolio-slides>
+
   </div>
+
+  
+  <ion-slides slidesPerView="1">
+    <ion-slide>
+        <img src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
+        <ion-button (click)="slideNext()">
+            <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
+        </ion-button>
+    </ion-slide>
+    <ion-slide>
+        <img src="../../../assets/gifs/AccountAbility_338x742.gif">
+        <ion-button (click)="slidePrev()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+        <ion-button (click)="slideNext()">
+            <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
+        </ion-button>
+    </ion-slide>
+    <ion-slide>
+        <img src="../../../assets/gifs/FinanceTracker_340x744.gif">
+        <ion-button (click)="slidePrev()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+        <ion-button (click)="slideNext()">
+            <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
+        </ion-button>
+    </ion-slide>
+    <ion-slide>
+        <img src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
+    </ion-slide>
+</ion-slides>
 </ion-content>
