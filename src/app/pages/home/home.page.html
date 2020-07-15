@@ -17,7 +17,44 @@
 
 
     <div>
-        <ion-slides class="slides" slidesPerView="1">
+
+        <super-tabs>
+            <super-tabs-toolbar slot="top" color="primary">
+                <super-tab-button>
+                    <ion-icon name="paper" color="light"></ion-icon>
+                    <ion-label>News</ion-label>
+                </super-tab-button>
+                <super-tab-button>
+                    <ion-icon name="contact" color="light"></ion-icon>
+                    <ion-label>Account</ion-label>
+                </super-tab-button>
+                <super-tab-button>
+                    <ion-icon name="information-circle-outline" color="light"></ion-icon>
+                    <ion-label>About</ion-label>
+                </super-tab-button>
+            </super-tabs-toolbar>
+        
+            <super-tabs-container>
+                <super-tab>
+                    
+                    <img src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
+                    
+                </super-tab>
+                <super-tab>
+                   
+                    <img src="../../../assets/gifs/AccountAbility_338x742.gif">
+                   
+                </super-tab>
+                <super-tab>
+                  
+                        App about
+                    
+                </super-tab>
+            </super-tabs-container>
+        
+        </super-tabs>
+
+        <!-- <ion-slides class="slides" slidesPerView="1">
             <ion-slide class="slide wide">
                 <div class="wide-title">Route Planning & Navigation</div>
                 <img src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
@@ -50,6 +87,6 @@
                 </ion-button>
                 <img src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
             </ion-slide>
-        </ion-slides>
+        </ion-slides> -->
     </div>
 </ion-content>
