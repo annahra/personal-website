@@ -19,12 +19,30 @@
     background: var(--ion-background-color) !important;
 }
 
-#skills-heading {
+.heading {
     font-size: xx-large;
     text-align: center;
     font-family: var(--ion-font-family);
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.slides {
+    margin-top: 20px;
+}
+
+.slide {
+    display: grid;
+}
+
+.wide-title {
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.wide {
+    grid-template-rows: 25% auto;
+    grid-template-columns: 20% auto 20%;
 }
 
 @media (min-width: 751px) and (max-width: 950px) {

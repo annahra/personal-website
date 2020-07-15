@@ -1,46 +1,55 @@
 <ion-content>
-  <app-main-menu></app-main-menu>
-  <div class="container">
-    <app-personal-card></app-personal-card>
-    
-    <ion-button id="download-resume" size="medium" color="light">
-      <ion-icon name="download" size="large"></ion-icon> 
-      <ion-label id="download-text">DOWNLOAD RESUME</ion-label>
-    </ion-button>
+    <app-main-menu></app-main-menu>
+    <div class="container">
+        <app-personal-card></app-personal-card>
 
-    <div id="skills-heading">Skills:</div>
-    <app-skills-section></app-skills-section>
+        <ion-button id="download-resume" size="medium" color="light">
+            <ion-icon name="download" size="large"></ion-icon>
+            <ion-label id="download-text">DOWNLOAD RESUME</ion-label>
+        </ion-button>
 
-  </div>
+        <div class="heading">Skills:</div>
+        <app-skills-section></app-skills-section>
 
-  
-  <ion-slides slidesPerView="1">
-    <ion-slide>
-        <img src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
-        <ion-button (click)="slideNext()">
-            <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
-        </ion-button>
-    </ion-slide>
-    <ion-slide>
-        <img src="../../../assets/gifs/AccountAbility_338x742.gif">
-        <ion-button (click)="slidePrev()">
-            <ion-icon name="arrow-back"></ion-icon>
-        </ion-button>
-        <ion-button (click)="slideNext()">
-            <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
-        </ion-button>
-    </ion-slide>
-    <ion-slide>
-        <img src="../../../assets/gifs/FinanceTracker_340x744.gif">
-        <ion-button (click)="slidePrev()">
-            <ion-icon name="arrow-back"></ion-icon>
-        </ion-button>
-        <ion-button (click)="slideNext()">
-            <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
-        </ion-button>
-    </ion-slide>
-    <ion-slide>
-        <img src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
-    </ion-slide>
-</ion-slides>
+    </div>
+
+    <div class="heading">Portfolio:</div>
+
+
+    <div>
+        <ion-slides class="slides" slidesPerView="1">
+            <ion-slide class="slide wide">
+                <div class="wide-title">Route Planning & Navigation</div>
+                <img src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
+                <ion-button (click)="slideNext()" shape="round">
+                    <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
+                </ion-button>
+            </ion-slide>
+            <ion-slide class="slide long">
+                <ion-button (click)="slidePrev()">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </ion-button>
+                <img src="../../../assets/gifs/AccountAbility_338x742.gif">
+                <ion-button (click)="slideNext()">
+                    <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
+                </ion-button>
+            </ion-slide>
+            <ion-slide class="slide long">
+                <ion-button (click)="slidePrev()">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </ion-button>
+                <img src="../../../assets/gifs/FinanceTracker_340x744.gif">
+                <ion-button (click)="slideNext()">
+                    <ion-icon name="arrow-forward" (click)="slideNext()"></ion-icon>
+                </ion-button>
+            </ion-slide>
+            <ion-slide class="slide wide">
+                <div class="wide-title">Spotify Recommendation System</div>
+                <ion-button (click)="slidePrev()">
+                    <ion-icon name="arrow-back"></ion-icon>
+                </ion-button>
+                <img src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
+            </ion-slide>
+        </ion-slides>
+    </div>
 </ion-content>
