@@ -35,32 +35,88 @@ super-tab-button {
 super-tabs-toolbar {
     background-color: #222428;
     color: #fff;
-    
+    width: 1200px;
+    align-self: center;
 }
 
-super-tab {
+.wide-proj {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
+
 
 .port-heading {
     margin-bottom: 25px;
 }
 
-.wide-img:hover {
-    cursor: pointer;
+.long-img {
+    // height: 500px;
+    margin-top: 35px;
+}
+
+.wide-title {
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+.wide-img {
+    margin: 30px;
+}
+
+.wide-des {
+    width: 500px;
+    text-align: center;
+}
+
+.create {
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.wide-butts {
+    margin-top: 20px;
+}
+
+.butts {
+    --background:  #222428;
+}
+
+
+
+.long-proj {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    align-self: center;
+    justify-self: center;
+}
+
+.long-img {
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
 @media (min-width: 751px) and (max-width: 950px) {
     #skills-heading {
         font-size: x-large;
     }
+
+    super-tabs-toolbar {
+        width: 100%;
+    }
 }
 
 @media (min-width: 439px) and (max-width: 750px) {
     #skills-heading {
         font-size: 25px;
+    }
+
+    .butts {
+        margin-top: 12px;
     }
 
     .labels {
@@ -73,6 +129,11 @@ super-tab {
         font-size: 25px;
         width: 275px;
     }
+
+    .butts {
+        margin-top: 12px;
+    }
+
 
     .labels {
         display: none;
