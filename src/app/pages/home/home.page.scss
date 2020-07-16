@@ -35,27 +35,22 @@ super-tab-button {
 super-tabs-toolbar {
     background-color: #222428;
     color: #fff;
+    
 }
 
-// .slides {
-//     margin-top: 20px;
-// }
+super-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-// .slide {
-//     display: grid;
-// }
+.port-heading {
+    margin-bottom: 25px;
+}
 
-// .wide-title {
-//     font-size: x-large;
-//     margin-bottom: 10px;
-// }
-
-// .wide {
-//     grid-template-rows: 25% auto;
-//     grid-template-columns: 20% auto 20%;
-// }
-
-
+.wide-img:hover {
+    cursor: pointer;
+}
 
 @media (min-width: 751px) and (max-width: 950px) {
     #skills-heading {
@@ -67,11 +62,19 @@ super-tabs-toolbar {
     #skills-heading {
         font-size: 25px;
     }
+
+    .labels {
+        display: none;
+    }
 }
 
 @media (max-width: 438px) {
     #skills-heading {
         font-size: 25px;
         width: 275px;
+    }
+
+    .labels {
+        display: none;
     }
 }
