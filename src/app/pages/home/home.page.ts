@@ -8,19 +8,10 @@ import { IonSlides } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
 
-  @ViewChild(IonSlides) slides: IonSlides;
-
   constructor() { }
 
   ngOnInit() {
   }
 
-  slidePrev() {
-    this.slides.slidePrev();
-  }
-
-  slideNext() {
-    this.slides.slideNext();
-  }
 
 }

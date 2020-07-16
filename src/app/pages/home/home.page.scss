@@ -27,23 +27,35 @@
     margin-right: 40px;
 }
 
-.slides {
-    margin-top: 20px;
+
+super-tab-button {
+    fill: #fff;
 }
 
-.slide {
-    display: grid;
+super-tabs-toolbar {
+    background-color: #222428;
+    color: #fff;
 }
 
-.wide-title {
-    font-size: x-large;
-    margin-bottom: 10px;
-}
+// .slides {
+//     margin-top: 20px;
+// }
 
-.wide {
-    grid-template-rows: 25% auto;
-    grid-template-columns: 20% auto 20%;
-}
+// .slide {
+//     display: grid;
+// }
+
+// .wide-title {
+//     font-size: x-large;
+//     margin-bottom: 10px;
+// }
+
+// .wide {
+//     grid-template-rows: 25% auto;
+//     grid-template-columns: 20% auto 20%;
+// }
+
+
 
 @media (min-width: 751px) and (max-width: 950px) {
     #skills-heading {
