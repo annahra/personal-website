@@ -86,15 +86,6 @@ super-tabs-toolbar {
 
 
 
-.long-proj {
-    display: grid;
-    width: 1200px;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    align-self: center;
-    justify-self: center;
-}
-
 .long-img {
     grid-column-start: 2;
     grid-row-start: 2;
