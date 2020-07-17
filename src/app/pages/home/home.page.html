@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content [forceOverscroll]="false">
     <app-main-menu></app-main-menu>
     <div class="container">
         <app-personal-card></app-personal-card>
@@ -15,91 +15,166 @@
 
     <div class="heading port-heading">Portfolio:</div>
 
+    <div id="port-butts">
+    <ion-button class="butts" shape="round" (click)="prev()">
+        <ion-icon size="large" slot="icon-only" name="caret-back"></ion-icon>
+    </ion-button> 
 
+    <ion-button class="butts" shape="round" (click)="next()">
+        <ion-icon size="large" slot="icon-only" name="caret-forward"></ion-icon>
+    </ion-button> 
+    </div>
+
+    <ion-slides>
+        <ion-slide>
+            <div class="wide-title">Spotify Recommendation System</div>
+            <img class="wide-img nonflex" src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
+            <div class="wide-des">A musical recommender system that takes in
+                a user's favorite artists, and outputs similar artists.
+            </div>
+            <div class="create">
+                Created with: Java, Eclipse, Graphstream API
+            </div>
+            <div class="wide-butts">
+                <ion-button class="butts" shape="round" href="https://github.com/annahra/spotify-capstone-project">
+                    <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                </ion-button>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="wide-title">AccountAbility</div>
+            <img class="wide-img img1" src="../../../assets/gifs/AccountAbility_269x590.gif">
+            <img class="wide-img img2" src="../../../assets/gifs/AccountAbility_219x480.gif">
+            <div class="wide-des">
+                A communal fact-checking app where users are dedicated to challenging
+                claims with verified sources.
+            </div>
+            <div class="create">
+                Created with: HTML, CSS, Typescript, NodeJS, Ionic, Angular
+            </div>
+            <div class="wide-butts">
+                <ion-button class="butts" shape="round" href="https://github.com/annahra/AccountAbility">
+                    <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                </ion-button>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="wide-title">Finance Tracker</div>
+            <img class="wide-img img1" src="../../../assets/gifs/FinanceTracker_270x590.gif">
+            <img class="wide-img img2" src="../../../assets/gifs/FinanceTracker_219x480.gif">
+            <div class="wide-des">
+                An app that allows you to track and organize your expenses and income.
+            </div>
+            <div class="create">
+                Created with: HTML, CSS, Typescript, NodeJS, Ionic, Angular
+            </div>
+            <div class="wide-butts">
+                <ion-button class="butts" shape="round" href="https://github.com/annahra/personalFinancesApp">
+                    <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                </ion-button>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="wide-title">Route Planning and Navigation System</div>
+            <img class="wide-img nonflex" src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
+            <div class="wide-des">A route planning system that takes a start and
+                end point and outputs the most efficient route.
+            </div>
+            <div class="create">
+                Created with: Java, Eclipse, Google Maps API
+            </div>
+            <div class="wide-butts">
+                <ion-button class="butts" shape="round" href="https://github.com/annahra/route-planning-and-visualization">
+                    <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                </ion-button>
+            </div>
+        </ion-slide>
+    </ion-slides>
+
+    <!-- <super-tabs>
+        <super-tabs-toolbar position="top" color="primary">
+            <super-tab-button>
+                <ion-icon class="tool-butts" name="musical-note" color="light"></ion-icon>
+                <ion-label class="labels">Recommendation</ion-label>
+            </super-tab-button>
+            <super-tab-button>
+                <ion-icon class="tool-butts" name="newspaper" color="light"></ion-icon>
+                <ion-label class="labels">AccountAbility</ion-label>
+            </super-tab-button>
+            <super-tab-button>
+                <ion-icon class="tool-butts" name="wallet" color="light"></ion-icon>
+                <ion-label class="labels">Finance Tracker</ion-label>
+            </super-tab-button>
+            <super-tab-button>
+                <ion-icon class="tool-butts" name="logo-google" color="light"></ion-icon>
+                <ion-label class="labels">Navigation</ion-label>
+            </super-tab-button>
+        </super-tabs-toolbar>
     
-        <super-tabs>
-            <super-tabs-toolbar slot="top" color="primary">
-                <super-tab-button>
-                    <ion-icon name="musical-note" color="light"></ion-icon>
-                    <ion-label class="labels">Recommendation</ion-label>
-                </super-tab-button>
-                <super-tab-button>
-                    <ion-icon name="newspaper" color="light"></ion-icon>
-                    <ion-label class="labels">AccountAbility</ion-label>
-                </super-tab-button>
-                <super-tab-button>
-                    <ion-icon name="wallet" color="light"></ion-icon>
-                    <ion-label class="labels">Finance Tracker</ion-label>
-                </super-tab-button>
-                <super-tab-button>
-                    <ion-icon name="logo-google" color="light"></ion-icon>
-                    <ion-label class="labels">Navigation</ion-label>
-                </super-tab-button>
-            </super-tabs-toolbar>
-        
-            <super-tabs-container>
-                <super-tab class="wide-proj">
-                    <div class="wide-title">Spotify Recommendation System</div>
-                    <img class="wide-img" src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
-                    <div class="wide-des">A musical recommender system that takes in 
-                        a user's favorite artists, and outputs similar artists.
-                    </div>
-                    <div class="create">
-                        Created with: Java, Eclipse, Graphstream API
-                    </div>
-                    <div class="wide-butts">
-                        <ion-button class="butts" shape="round" href="https://github.com/annahra/spotify-capstone-project">
-                            <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
-                        </ion-button>
-                    </div>
-                </super-tab>
-                <super-tab noScroll="true" class="wide-proj">
-                    <div class="wide-title">AccountAbility</div>
-                    <img class="wide-img" src="../../../assets/gifs/AccountAbility_269x590.gif">
-                    <div class="wide-des">
-                        A communal fact-checking app where users are dedicated to challenging
-                        claims with verified sources.
-                    </div>
-                    <div class="create">
-                            Created with: HTML, CSS, Typescript, NodeJS, Ionic, Angular
-                    </div>
-                    <div class="wide-butts">
-                        <ion-button class="butts" shape="round" href="https://github.com/annahra/AccountAbility">
-                            <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
-                        </ion-button>
-                    </div>
-                </super-tab>
-                <super-tab noScroll="true" class="wide-proj">
-                    <div class="wide-title">Finance Tracker</div>
-                    <img class="wide-img" src="../../../assets/gifs/FinanceTracker_270x590.gif">
-                    <div class="wide-des">
-                        An app that allows you to track and organize your expenses and income.
-                    </div>
-                    <div class="create">
-                            Created with: HTML, CSS, Typescript, NodeJS, Ionic, Angular
-                    </div>
-                    <div class="wide-butts">
-                        <ion-button class="butts" shape="round" href="https://github.com/annahra/personalFinancesApp">
-                            <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
-                        </ion-button>
-                    </div>
-                </super-tab>
-                <super-tab class="wide-proj">
-                    <div class="wide-title">Route Planning and Navigation System</div>
-                    <img class="wide-img" src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
-                    <div class="wide-des">A route planning system that takes a start and
-                         end point and outputs the most efficient route.
-                    </div>
-                    <div class="create">
-                        Created with: Java, Eclipse, Google Maps API
-                    </div>
-                    <div class="wide-butts">
-                        <ion-button class="butts" shape="round" href="https://github.com/annahra/route-planning-and-visualization">
-                            <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
-                        </ion-button>
-                    </div>
-                </super-tab>
-            </super-tabs-container>
-        </super-tabs>
+        <super-tabs-container>
+            <super-tab class="wide-proj">
+                <div class="wide-title">Spotify Recommendation System</div>
+                <img class="wide-img nonflex" src="../../../assets/gifs/SpotifyRec/SpotifyRec_710x514.gif">
+                <div class="wide-des">A musical recommender system that takes in
+                    a user's favorite artists, and outputs similar artists.
+                </div>
+                <div class="create">
+                    Created with: Java, Eclipse, Graphstream API
+                </div>
+                <div class="wide-butts">
+                    <ion-button class="butts" shape="round" href="https://github.com/annahra/spotify-capstone-project">
+                        <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                    </ion-button>
+                </div>
+            </super-tab>
+            <super-tab class="wide-proj">
+                <div class="wide-title">AccountAbility</div>
+                <img class="wide-img" src="../../../assets/gifs/AccountAbility_269x590.gif">
+                <div class="wide-des">
+                    A communal fact-checking app where users are dedicated to challenging
+                    claims with verified sources.
+                </div>
+                <div class="create">
+                    Created with: HTML, CSS, Typescript, NodeJS, Ionic, Angular
+                </div>
+                <div class="wide-butts">
+                    <ion-button class="butts" shape="round" href="https://github.com/annahra/AccountAbility">
+                        <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                    </ion-button>
+                </div>
+            </super-tab>
+            <super-tab class="wide-proj">
+                <div class="wide-title">Finance Tracker</div>
+                <img class="wide-img" src="../../../assets/gifs/FinanceTracker_270x590.gif">
+                <div class="wide-des">
+                    An app that allows you to track and organize your expenses and income.
+                </div>
+                <div class="create">
+                    Created with: HTML, CSS, Typescript, NodeJS, Ionic, Angular
+                </div>
+                <div class="wide-butts">
+                    <ion-button class="butts" shape="round" href="https://github.com/annahra/personalFinancesApp">
+                        <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                    </ion-button>
+                </div>
+            </super-tab>
+            <super-tab class="wide-proj">
+                <div class="wide-title">Route Planning and Navigation System</div>
+                <img class="wide-img nonflex" src="../../../assets/gifs/RPaN/RPaN_800x447.gif">
+                <div class="wide-des">A route planning system that takes a start and
+                    end point and outputs the most efficient route.
+                </div>
+                <div class="create">
+                    Created with: Java, Eclipse, Google Maps API
+                </div>
+                <div class="wide-butts">
+                    <ion-button class="butts" shape="round"
+                        href="https://github.com/annahra/route-planning-and-visualization">
+                        <ion-icon size="large" slot="icon-only" name="logo-github"></ion-icon>
+                    </ion-button>
+                </div>
+            </super-tab>
+        </super-tabs-container>
+    </super-tabs> -->
     
 </ion-content>

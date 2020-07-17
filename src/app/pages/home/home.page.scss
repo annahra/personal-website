@@ -46,6 +46,13 @@ super-tabs-toolbar {
     align-items: center;
 }
 
+ion-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 
 .port-heading {
     margin-bottom: 25px;
@@ -57,8 +64,9 @@ super-tabs-toolbar {
 }
 
 .wide-title {
-    margin-top: 40px;
+    //margin-top: 40px;
     font-size: x-large;
+    text-align: center;
 }
 
 .wide-img {
@@ -82,13 +90,49 @@ super-tabs-toolbar {
 
 .butts {
     --background:  #222428;
+    margin-bottom: 25px;
+}
+
+.nonflex {
+    width: 710px;
+}
+
+super-tab {
+    overflow: hidden;
+    --super-tab-height: auto;
+}
+
+#back {
+    align-self: center;
+}
+
+#forward {
+    align-self: center;
+}
+
+#port-butts {
+    display: flex;
+    justify-content: center;
+    
 }
 
 
+@media (min-width: 1156px) {
+    .img2 {
+        display: none;
+    }
+    
+}
 
-.long-img {
-    grid-column-start: 2;
-    grid-row-start: 2;
+@media (min-width: 951px) and (max-width: 1155px) {
+    super-tabs-toolbar {
+        width: 100%;
+    }
+
+    .img2 {
+        display: none;
+    }
+    
 }
 
 @media (min-width: 751px) and (max-width: 950px) {
@@ -99,6 +143,11 @@ super-tabs-toolbar {
     super-tabs-toolbar {
         width: 100%;
     }
+
+    .img2 {
+        display: none;
+    }
+    
 }
 
 @media (min-width: 439px) and (max-width: 750px) {
@@ -106,13 +155,22 @@ super-tabs-toolbar {
         font-size: 25px;
     }
 
-    .butts {
+    .tool-butts {
         margin-top: 12px;
     }
 
     .labels {
         display: none;
     }
+
+    super-tabs-toolbar {
+        width: 100%;
+    }
+
+    .img2 {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 438px) {
@@ -121,12 +179,42 @@ super-tabs-toolbar {
         width: 275px;
     }
 
-    .butts {
+    .tool-butts {
         margin-top: 12px;
     }
 
-
     .labels {
         display: none;
+    }
+
+    super-tabs-toolbar {
+        width: 100%;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .wide-title {
+        font-size: 22px;
+    }
+
+    .wide-des {
+        font-size: medium;
+        width: 325px;
+    }
+
+    .create {
+        font-size: medium;
+        width: 325px;
+        text-align: center;
+    }
+
+    .nonflex {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
