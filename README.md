@@ -8,7 +8,7 @@ You will need Node.js (at least v13), npm (at least v6), Angular (at least v9), 
 
 ### Prerequisites
 
-To install Node.js and npm, follow this [link](https://www.npmjs.com/get-npm). Verify you've correctly installed both Node.js and npm by opening GitBASH and running the following commands:
+To install Node.js and npm, follow this [link](https://www.npmjs.com/get-npm). Verify you've correctly installed both Node.js and npm by running the following commands:
 
 ```
 node --version
