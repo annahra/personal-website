@@ -11,8 +11,7 @@
     "lint": "ng lint",
     "ng": "ng",
     "start": "node server.js --build-optimizer --max_old_space_size=8192",
-    "test": "ng test",
-    "heroku-postbuild": "npm install"
+    "test": "ng test"
   },
   "dependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
