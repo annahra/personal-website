@@ -11,7 +11,8 @@
     "lint": "ng lint",
     "ng": "ng",
     "start": "node server.js --build-optimizer --max_old_space_size=8192",
-    "test": "ng test"
+    "test": "ng test",
+    "preinstall": "npm install -g angular-cli"
   },
   "dependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
