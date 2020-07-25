@@ -11,7 +11,8 @@
     "lint": "ng lint",
     "ng": "ng",
     "start": "node server.js --build-optimizer --max_old_space_size=8192",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "npm install"
   },
   "dependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
@@ -25,6 +26,7 @@
     "@angular/platform-browser": "~9.1.6",
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
+    "@capacitor/cli": "2.2.1",
     "@capacitor/core": "2.2.1",
     "@ionic-native/core": "^5.0.7",
     "@ionic-native/splash-screen": "^5.0.0",
@@ -32,21 +34,13 @@
     "@ionic-super-tabs/angular": "^7.0.8",
     "@ionic/angular": "^5.2.3",
     "@ionic/angular-toolkit": "^2.1.1",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "rxjs": "~6.5.1",
-    "tslib": "^1.10.0",
-    "typescript": "~3.8.3",
-    "zone.js": "~0.10.2"
-  },
-  "devDependencies": {
-    "@capacitor/cli": "2.2.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "body-parser": "^1.19.0",
     "codelyzer": "^5.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
@@ -54,10 +48,16 @@
     "karma-coverage-istanbul-reporter": "~2.1.0",
     "karma-jasmine": "~3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "morgan": "^1.10.0",
     "protractor": "~5.4.3",
+    "rxjs": "~6.5.1",
     "ts-node": "~8.3.0",
-    "tslint": "~6.1.0"
+    "tslib": "^1.10.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.8.3",
+    "zone.js": "~0.10.2"
   },
+  "devDependencies": {},
   "engines": {
     "node": "12.x",
     "npm": "6.x"
