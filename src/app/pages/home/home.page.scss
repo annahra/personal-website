@@ -121,12 +121,20 @@ super-tab {
     .img2 {
         display: none;
     }
+
+    .small {
+        display: none;
+    }
     
 }
 
 @media (min-width: 951px) and (max-width: 1155px) {
     super-tabs-toolbar {
         width: 100%;
+    }
+
+    .small {
+        display: none;
     }
 
     .img2 {
@@ -138,6 +146,10 @@ super-tab {
 @media (min-width: 751px) and (max-width: 950px) {
     #skills-heading {
         font-size: x-large;
+    }
+
+    .small {
+        display: none;
     }
 
     super-tabs-toolbar {
@@ -157,6 +169,15 @@ super-tab {
 
     .tool-butts {
         margin-top: 12px;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .small {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .labels {
@@ -179,6 +200,20 @@ super-tab {
         width: 275px;
     }
 
+    .big {
+        display: none;
+    }
+
+    .small {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .butts {
+        width: 70px;
+        height: 35px;
+    }
+
     .tool-butts {
         margin-top: 12px;
     }
@@ -199,7 +234,7 @@ super-tab {
 
 @media (max-width: 550px) {
     .wide-title {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .wide-des {
