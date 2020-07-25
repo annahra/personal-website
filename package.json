@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Annah Ramones",
   "homepage": "https://ionicframework.com/",
-  "engine": { "node": "v12.16.3", "npm": "6.14.4" },
+  "engine": { "node": "12.x", "npm": "6.x" },
   "scripts": {
     "ng": "ng",
     "start": "node server.js --build-optimizer --max_old_space_size=8192",
@@ -11,7 +11,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "ng build --aot --prod",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
