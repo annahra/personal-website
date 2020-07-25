@@ -1,20 +1,20 @@
 {
   "name": "my-website",
   "version": "0.0.1",
-  "author": "Annah Ramones",
+  "private": true,
+  "description": "Annah's website",
   "homepage": "https://ionicframework.com/",
-  "engine": { "node": "12.x", "npm": "6.x" },
+  "author": "Annah Ramones",
   "scripts": {
+    "build": "node --max-old-space-size=8192 node_modules/@angular/cli/bin/ng build",
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ionic build --prod",
+    "postinstall": "ionic build --aot --prod",
+    "lint": "ng lint",
     "ng": "ng",
     "start": "node server.js --build-optimizer --max_old_space_size=8192",
-    "build": "node --max-old-space-size=8192 node_modules/@angular/cli/bin/ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod",
-    "heroku-postbuild": "ng build --prod"
+    "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
     "@angular/cli": "~9.1.5",
@@ -60,5 +60,8 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0"
   },
-  "description": "Annah's website"
+  "engine": {
+    "node": "12.x",
+    "npm": "6.x"
+  }
 }
